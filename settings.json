@@ -1,7 +1,7 @@
 {
-  "name": "Minecraft Player",
+  "name": "AFK Bot",
   "bot-account": {
-    "username": "the 24/7 bot",
+    "username": "the24/7bot",
     "password": "",
     "type": "offline"
   },
@@ -12,57 +12,61 @@
     "try-creative": false
   },
   "position": {
-    "enabled": false,
+    "enabled": true,
     "x": 0,
-    "y": 0,
+    "y": 100,
     "z": 0
   },
   "utils": {
     "auto-auth": {
-      "enabled": false,
-      "password": ""
+      "enabled": true,
+      "password": "chalol78"
     },
     "anti-afk": {
-      "enabled": false,
-      "sneak": false
+      "enabled": true,
+      "sneak": true
     },
     "chat-messages": {
-      "enabled": false,
-      "repeat": false,
-      "repeat-delay": 0,
-      "messages": []
+      "enabled": true,
+      "repeat": true,
+      "repeat-delay": 120,
+      "messages": [
+        "I'm a regular player",
+        "Subscribe to Slobos!",
+        "I like to play Minecraft!"
+      ]
     },
     "chat-log": true,
-    "auto-reconnect": false,
-    "auto-reconnect-delay": 0,
-    "max-reconnect-delay": 0
+    "auto-reconnect": true,
+    "auto-reconnect-delay": 2000,
+    "max-reconnect-delay": 120000
   },
   "movement": {
-    "enabled": false,
+    "enabled": true,
     "circle-walk": {
-      "enabled": false,
-      "radius": 0,
-      "speed": 0
+      "enabled": true,
+      "radius": 4,
+      "speed": 3000
     },
     "look-around": {
-      "enabled": false,
-      "interval": 0
+      "enabled": true,
+      "interval": 5000
     },
     "random-jump": {
-      "enabled": false,
-      "interval": 0
+      "enabled": true,
+      "interval": 10000
     }
   },
   "modules": {
-    "avoidMobs": false,
-    "combat": false,
+    "avoidMobs": true,
+    "combat": true,
     "beds": false,
     "chat": true,
-    "console-commands": false
+    "console-commands": true
   },
   "combat": {
-    "attack-mobs": false,
-    "auto-eat": false
+    "attack-mobs": true,
+    "auto-eat": true
   },
   "beds": {
     "pick-up-day": false,
@@ -70,14 +74,14 @@
   },
   "discord": {
     "enabled": false,
-    "webhookUrl": "",
+    "webhookUrl": "YOUR_DISCORD_WEBHOOK_URL_HERE",
     "events": {
-      "connect": false,
-      "disconnect": false,
+      "connect": true,
+      "disconnect": true,
       "chat": false
     }
   },
   "chat": {
-    "respond": false
+    "respond": true
   }
 }
